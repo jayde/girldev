@@ -67,6 +67,7 @@ p {
 
 /* Begin Sidebar */
 .sidebar {
+    background-color: #000;
     background-image: -webkit-gradient(
         linear,
         left top,
@@ -100,6 +101,7 @@ p {
 .sidebar img {
     width: 100%;
     height: auto;
+    border: none;
 }
 .sidebar .tagline {
     display: block;
@@ -169,6 +171,11 @@ p {
     float: left;
     margin-right: 20px;
     margin-bottom: 10px;
+}
+@media only screen and (max-width: 480px ) {
+    .main .intro img {
+        float: none;
+    }
 }
 .main li {
     margin-bottom: 0.75em;
