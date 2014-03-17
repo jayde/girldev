@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+    box-sizing: border-box;
+}
+
+/* Begin Fonts */
+@font-face {
+	font-family: 'LuxiSansRegular';
+	src: url('fonts/luxisr-webfont.eot');
+	src: local('☺'), url('fonts/luxisr-webfont.woff') format('woff'), url('fonts/luxisr-webfont.ttf') format('truetype'), url('fonts/luxisr-webfont.svg#webfontN9fmgVet') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LuxiSansRegular';
+	src: url('fonts/luxisb-webfont.eot');
+	src: local('☺'), url('fonts/luxisb-webfont.woff') format('woff'), url('fonts/luxisb-webfont.ttf') format('truetype'), url('fonts/luxisb-webfont.svg#webfonttYIaMbaU') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LuxiSansRegular';
+	src: url('fonts/luxisri-webfont.eot');
+	src: local('☺'), url('fonts/luxisri-webfont.woff') format('woff'), url('fonts/luxisri-webfont.ttf') format('truetype'), url('fonts/luxisri-webfont.svg#webfontI5yshVrz') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'LuxiSansRegular';
+	src: url('fonts/luxisbi-webfont.eot');
+	src: local('☺'), url('fonts/luxisbi-webfont.woff') format('woff'), url('fonts/luxisbi-webfont.ttf') format('truetype'), url('fonts/luxisbi-webfont.svg#webfontf9L7bBSL') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+/* End Fonts */
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: LuxiSansRegular, Arial, Helvetica, sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.4rem;
+}
+.wrapper {
+    max-width: 1024px;
+    height: 100%;
+}
+
+/* Begin Sidebar */
+.sidebar {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #3A3A3A),
+        color-stop(1, #000000)
+    );
+    background-image: -o-linear-gradient(bottom, #3A3A3A 0%, #000000 100%);
+    background-image: -moz-linear-gradient(bottom, #3A3A3A 0%, #000000 100%);
+    background-image: -webkit-linear-gradient(bottom, #3A3A3A 0%, #000000 100%);
+    background-image: -ms-linear-gradient(bottom, #3A3A3A 0%, #000000 100%);
+    background-image: linear-gradient(to bottom, #3A3A3A 0%, #000000 100%);
+    
+    border-right: 2px solid #fff;
+    -webkit-box-shadow: 2px 0px 0px 0px rgba(255,0,168, 0.25);
+    -moz-box-shadow: 2px 0px 0px 0px rgba(0,0,0,0.25);
+    box-shadow: 2px 0px 0px 0px rgba(0,0,0,0.25);
+    
+    height: 100%;
+    padding: 100px 40px 40px;
+    text-align: right;
+    float: left;
+    color: #b4b4b4;
+    font-size: 2.0rem;
+    min-width: 175px;
+    width: 35%;
+    max-width: 360px;
+    position: fixed;
+
+}
+.sidebar img {
+    width: 100%;
+    height: auto;
+}
+.sidebar .tagline {
+    display: block;
+    padding: 30px 0;
+    border-bottom: 2px solid #b4b4b4;
+}
+.sidebar .tagline .designer {
+    color: #dbcc15;
+}
+.sidebar .tagline .developer {
+    color: #00c0ff;
+}
+.sidebar nav ul {
+    padding: 0;
+    margin: 0;
+}
+.sidebar nav ul li {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+.sidebar a {
+    display: block;
+    margin: 10px -40px 10px 0;
+    padding: 10px 40px 10px 0;
+    color: #b4b4b4;
+    text-decoration: none;
+    transition: background-color 1s ease;
+   
+}
+.sidebar nav a:hover {
+    background-color: #fff;
+    color: #000;
+}
+.sidebar nav a:active {
+    background-color: #ddd;
+}
+.sidebar nav li.current a {
+    background-color: #ff00a8;
+    color: #fff;
+}
+/* End Sidebar */
+
+/* Begin Main Content Area */
+.main {
+    padding: 100px 40px 0 60px;
+    background-color: #fff;    
+    height: 100%;
+    float: left;
+    margin-left: 35%;
+}
+.main:after {
+    display: block;
+    content: "";
+    clear: both;
+    height: 20px;
+}
+.main img {
+    border: 1px solid #bbb;
+    padding: 5px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+}
+.main .intro img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.main li {
+    margin-bottom: 0.75em;
+}
+/* End Main Content Area */
