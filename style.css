@@ -50,6 +50,9 @@ html {
 body {
     font-size: 1.4rem;
 }
+h1, h2, h3 {
+    color: #128fb2;
+}
 .wrapper {
     max-width: 1024px;
     height: 100%;
